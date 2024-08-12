@@ -8,7 +8,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.677),
+      rgba(157, 50, 50, 0.719),
       rgba(36, 10, 10, 0.603)
     ),
     url(https://img.freepik.com/premium-photo/russian-ruble-blue-red-white-background-social-media-design_1061150-57877.jpg?w=1380);
@@ -19,7 +19,7 @@ body {
 
 .main-container {
   height: 100vh;
-  width: 30%;
+  width: 80%;
   margin: 0 auto;
 }
 .container {
@@ -28,6 +28,8 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  width: 36rem;
+  margin: auto;
 }
 .from-container {
   background-image: linear-gradient(
@@ -45,20 +47,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
 }
 .select-container {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   width: 12rem;
   border-radius: 0.5rem;
   border: 1px solid lightgrey;
   padding: 0.25rem;
   gap: 1.5rem;
-  
 }
-.currency-title{
-  color:aliceblue;
+.currency-title {
+  color: aliceblue;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -67,7 +69,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: aliceblue;
 }
 
 form select,
@@ -84,14 +87,21 @@ form input {
   padding-left: 0.5rem;
   font-weight: 700;
 }
-form select{
-  padding: 0.70rem;
+form select {
+  padding: 0.7rem;
   font-size: 1rem;
-  background-color: lightgray ;
+  background-color: lightgray;
+}
+.message {
+  color: rgb(255, 253, 253);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .btn {
   margin-top: 1rem;
+ 
   --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
   --border-width: 0.125em;
   --curve-size: 0.5em;
@@ -105,7 +115,7 @@ form select{
   isolation: isolate;
   display: inline-grid;
   place-content: center;
-  padding: 0.5em 1.5em;
+  padding: 0.75em 1.5em;
   font-size: 17px;
   border: 0;
   text-transform: uppercase;
@@ -187,4 +197,61 @@ form select{
 
 .btn:where(:hover, :focus) {
   color: #fff;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+  }
+  .container {
+    width: 36rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body {
+    max-height: 100vh;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .from-container {
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .dropdown {
+    flex-direction: column;
+  }
+  .select-container {
+    gap: 1rem;
+  }
+  .select-container {
+    gap: 1rem;
+  }
+  form input {
+    border: 1px solid lightgrey;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-weight: 600;
+  }
+  .fa-solid {
+    margin-top: 1rem;
+  }
+  .message {
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
 }
