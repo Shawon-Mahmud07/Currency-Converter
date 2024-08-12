@@ -17,54 +17,46 @@
   <section class="main-container">
     <div class="container">
       <div class="from-container">
-<h1 class="currency-title">Currency Converter</h1>
-<form>
-  <div class="amount">
-    <h3 style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem;">Enter Amount:</h3>
-    <input type="number" value="100">
-  </div>
+        <h1 class="currency-title">Currency Converter</h1>
+        <form>
+          <div class="amount">
+            <h3 style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem;">Enter Amount:</h3>
+            <input type="number" value="1">
+          </div>
 
-  <div class="dropdown">
-    <div class="from">
-      <p style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem; margin-top: 0.5rem;">From</p>
-      <div class="select-container">
-        <img src="https://flagsapi.com/US/flat/64.png" alt="country-flag">
-        <select name="from">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="JPY">JPY</option>
-        </select>
+          <div class="dropdown">
+            <div class="from">
+              <p style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem; margin-top: 0.5rem;">From</p>
+              <div class="select-container">
+                <img src="https://flagsapi.com/US/flat/64.png" alt="country-flag">
+                <select name="from">
+
+                </select>
+              </div>
+            </div>
+            <i class="fa-solid fa-right-left"></i>
+            <div class="to">
+              <p style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem; margin-top: 0.5rem;">To</p>
+              <div class="select-container ">
+                <img src="https://flagsapi.com/BD/flat/64.png" alt="country-flag">
+                <select  name="to">
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="message">
+          </div>
+          <div class="btn-box">
+            <button class="btn">Get Exchange Rate</button>
+          </div>
+        </form>
       </div>
-    </div>
-    <i class="fa-solid fa-right-left"></i>
-    <div class="to">
-      <p style=" color:rgb(255, 253, 253); margin-bottom: 0.5rem; margin-top: 0.5rem;">To</p>
-      <div class="select-container">
-        <img src="https://flagsapi.com/BD/flat/64.png" alt="country-flag">
-        <select name="from">
-          <option value="USD">BD</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="JPY">JPY</option>
-        </select>
-      </div>
-    </div>
-  </div>
-  <div class="message">
-    1 USD = 117.00 BDT.
-  </div>
-  <div class="btn-box">
-    <button class="btn">Get Exchange Rate</button>
-  </div>
-</form>
-      </div>
-      
+
 
     </div>
   </section>
-  <script src="app.js"></script>
   <script src="codes.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
