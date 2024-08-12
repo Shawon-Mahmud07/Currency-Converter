@@ -256,3 +256,19 @@ form select {
   }
 
 }
+
+@media screen and (max-width: 425px){
+  .from-container {
+  background-image: linear-gradient(
+    290deg,
+    hsla(240, 88%, 34%, 0.349) 0%,
+    hsla(342, 59%, 19%, 0.624) 58%,
+    hsla(0, 24%, 19%, 0.466) 100%
+  );
+  width: 100%;
+  padding-top: 6rem;
+  height: 100vh;
+  border-radius: 0;
+
+}
+}
