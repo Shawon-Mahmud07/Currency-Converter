@@ -41,7 +41,7 @@ btn.addEventListener("click", (e) => {
 });
 
 const exchangeUpdateRate = async() => {
-   let amount = document.querySelector(".amount input");
+  let amount = document.querySelector(".amount input");
   let amountValue = amount.value;
   if (amountValue < 1 || amountValue === "") {
     amountValue = 1;

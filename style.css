@@ -266,9 +266,9 @@ form select {
     hsla(0, 24%, 19%, 0.466) 100%
   );
   width: 100%;
-  padding-top: 6rem;
+  
   height: 100vh;
   border-radius: 0;
-
 }
+
 }
